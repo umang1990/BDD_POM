@@ -26,6 +26,7 @@ public class OrderStepDef extends TestBase{
 	public void user_search_an_item(String item) {
 	   homePage = new HomePage();
 	   resultPage = homePage.searchItem(item);
+	   System.out.println("User search Item");
 		
 	}
 	
