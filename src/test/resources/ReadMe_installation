@@ -10,3 +10,11 @@ Git Client Credential
 
 User Name : umang1990
 Password : Krishna@9013
+
+Fresco Play / HackkerRank tools  Google Chrome browser update if need.
+
+78.0.3904.105
+
+78.0.3904.11
+
+$(wget https://chromedriver.storage.googleapis.com/78.0.3904.105/chromedriver_linux64.zip)
