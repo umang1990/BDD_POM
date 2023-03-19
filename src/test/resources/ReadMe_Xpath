@@ -1,0 +1,44 @@
+Web URL: https://www.lambdatest.com/blog/
+Web URL: https://www.lambdatest.com/blog/
+Xpath:
+
+//input[@id='username'] 
+//input[@name='username']
+ //input[@type='text']
+  //input[@type='text' and @id='username'] 
+  //input[@type='text' or  @id='username'] 
+  //button[@type='submit' and @class='radius'] 
+  //input[placeholder='Full Name*']
+
+Chained xpath 
+//form[@class='form reg-custom']
+//div[@class='w-full custom__border']
+//div[@class='w-full custom__border xls:mt-20 mt-10']//li[2]
+
+Indexing Xpath
+(//div[@class='w-full custom__border xls:mt-20 mt-10'])[2]
+
+If you not have any attribute. Need to use contains method in xpath.
+//a[contains(text(), 'Login')]
+//li//a[contains(text(), 'Login')]
+
+Find element using entire xpath
+//a[text()=’Playwright Testing’]
+
+
+Find the element using axes xpath: Sibling, not direct parent chind relation that time we are using.
+//input[@placeholder='Full Name*']//following::input    
+//input[@placeholder='Full Name*']//following::input[4]
+
+Preceding like similar following xpath. But it is working bottom to top.
+//input[@id='phone']//preceding::input
+//input[@id='phone']//preceding::input[3]
+//ul[@id='menu-side-menu']//li[@id='menu-item-1423']//preceding-sibling::li[2]
+
+
+CSS Selector:
+
+1.	find direct child name :
+form.form.reg-custom > div:nth-child(2)
+2.	Find Element like Parent >> Many child >> Many Sub child :
+ul.nav.navbar-nav.navbar-right.navbar_right_blog > li:nth-child(1)
